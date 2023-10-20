@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Menu Ampoules</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact">
+
+        <div class="info box1">
+            
+            <h2>Contactez-nous</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quibusdam consequatur modi hic, 
+                provident doloribus a optio iste ratione delectus.</p>
+        </div>
+        
+        <form action="traitement.php" method="post">
+            <div>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre Nom" required>
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+            </div>
+            <div>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Entrez votre message motherfucker" required></textarea>
+            </div>
+            <input type="submit" value="Envoyer">
+        </form>
+
+    </section>
+</body>
+
+</html>

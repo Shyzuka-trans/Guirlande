@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #797979;
+    padding: 0%;
+    margin: 0%;
+    font-size:large;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+    width: 100vw;
+}
+header {
+    background-color: rgba(20, 24, 43, 1);
+    color: #fff;
+    display: flex;
+    
+}
+header nav {
+    margin: auto;
+}
+header nav ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li{
+    margin: 10px;
+    
+}
+
+header nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 30px;
+    position: relative;
+}
+
+header nav ul li a:hover {
+    color: #ff0057; 
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////ampoule */
+header nav ul li a::before {
+    content: " ";
+    display: flex;
+    width: 20px;
+    height: 30px;
+    background-color: #cecece; 
+    border-radius: 50%;
+    position: relative;
+    top: 0px;
+    left: -70em;
+}
+
+header nav ul li a:hover::before {
+    background-color: #ff0057; 
+    left: -1em;
+    transition: 0.2s;
+}
+header nav ul li a::after {
+    content: " ";
+    display: flex;
+    width: 29px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #e64a19;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: -13px;
+}
+header nav ul li a:hover::after {
+    transition: 0.2s;
+    top: -25px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////section acceuil */
+section {
+    display: flex;
+    margin: 0;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.container1{
+    position: relative;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-rows: auto;
+    grid-gap:0 40px;
+}
+.box1{
+    position: relative ;
+    height: 500px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    color: #fff;
+    flex-direction: column;
+    
+}
+.box1:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+}
+.box1:nth-child(1):before{
+    background: linear-gradient(315deg,#ff0057,#e64a19);
+}
+.box1:nth-child(2):before{
+    background: linear-gradient(315deg,#e64a19,#ff0057);
+}
+.box1:nth-child(3):before{
+    background: linear-gradient(315deg,#ff0057,#e64a19);
+}
+.content{
+    position: relative;
+    padding: 20px;
+}
+.box1 .content h2{
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0%;
+    padding: 0%;
+    font-size: 10em;
+    color: rgba(255,255,255,.05);
+    transition: 0.5s;
+}
+.box1:hover .content h2{
+    top: -125px;
+}
+.box1 .content h3{
+    margin: 0 0 10px;
+    padding: 0%;
+    font-size:  24px;
+    font-weight: 500;
+    color: #fff;
+}
+.box1 .content p{
+    margin: 0%;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+}
+.box1 .content a{
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+.box1:hover .content a{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+.box1 .content a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.border {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*//////////////////////////////////////////////////////formulaire contact/////////////////////////////////*/
+label{
+    display: none;
+}
+.info{
+    max-width: 20vw;
+    margin-right: 10vw;
+    height: 45vh;
+}
+form div input, form div textarea{
+    min-width: 20vw;
+    min-height: 25px;
+    
+}
+form div{
+    margin: 10px 0;
+}
+#contact div h2{
+    text-align: left;
+}
+#contact .box1{
+    align-items: flex-start;
+    padding: 0 40px;
+    
+}
